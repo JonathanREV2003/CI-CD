@@ -26,3 +26,4 @@ C:\Users\jelia\Documents\Proyectos\CI-CD\ci-cd\obj\Debug\net10.0\refint\ci-cd.dl
 C:\Users\jelia\Documents\Proyectos\CI-CD\ci-cd\obj\Debug\net10.0\ci-cd.pdb
 C:\Users\jelia\Documents\Proyectos\CI-CD\ci-cd\obj\Debug\net10.0\ci-cd.genruntimeconfig.cache
 C:\Users\jelia\Documents\Proyectos\CI-CD\ci-cd\obj\Debug\net10.0\ref\ci-cd.dll
+C:\Users\jelia\Documents\Proyectos\CI-CD\ci-cd\obj\Debug\net10.0\ci-cd.sourcelink.json
