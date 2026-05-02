@@ -32,8 +32,8 @@ jobs:
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          name: app # CAMBIO (antes .net-app)
+          path: publish  # CAMBIO (antes myapp que no existía)
 
   deploy:
     runs-on: windows-latest
@@ -46,7 +46,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: .net-app
+          name: app #CAMBIO (debe coincidir con el upload) antes .net-app
       
       - name: Login to Azure
         uses: azure/login@v2
@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'Implementation-ci-cd'
           slot-name: 'Production'
-          package: .
+          package: . # usa lo descargado del artifact
           
